@@ -1,0 +1,161 @@
+:root {
+  font-family: Rubik, sans-serif;
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.map {
+  margin: 40px auto auto;
+}
+
+.finder {
+  text-align: center;
+  background: url("pattern-bg.884cb380.png") 0 0 / cover;
+  height: 100%;
+  padding: 2rem 1.5rem 17.5rem;
+  position: relative;
+}
+
+@media (width >= 1024px) {
+  .finder {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.search-bar {
+  justify-content: center;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.search-bar__input {
+  color: #2b2b2b;
+  cursor: text;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  width: 100%;
+  max-width: 500px;
+  padding: 1.5rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.search-bar__btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #000;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  outline: none;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.search-bar__btn:hover {
+  background-color: #4d4d4d;
+}
+
+.search-bar__btn:after {
+  content: "";
+  background: none;
+  border: 2px solid #fff;
+  border-color: #fff #fff #0000 #0000;
+  width: 7px;
+  height: 7px;
+  display: block;
+  transform: rotate(45deg);
+}
+
+.info {
+  z-index: 10000;
+  background-color: #fff;
+  border-radius: 15px;
+  flex-direction: column;
+  width: calc(100% - 3rem);
+  padding: 2rem;
+  font-size: large;
+  display: flex;
+  position: absolute;
+  left: 1.5rem;
+}
+
+@media (width >= 1024px) {
+  .info {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transform: translateY(50%);
+  }
+}
+
+.info__block {
+  flex: 1 0 25%;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.info__block:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.info__block-subtitle {
+  color: #969696;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.info__block-title {
+  color: #2b2b2b;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.map {
+  min-height: calc(100vh - 200px);
+}
+
+@media (width >= 1024px) {
+  .info {
+    flex-direction: row;
+  }
+
+  .info__block {
+    margin-bottom: 0;
+  }
+
+  .info__block:after {
+    content: "";
+    background-color: #9696964d;
+    width: 1px;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .info__block:last-child:after {
+    display: none;
+  }
+
+  .info__block-title {
+    font-size: 2.4rem;
+  }
+}
+/*# sourceMappingURL=index.6101bfb5.css.map */
